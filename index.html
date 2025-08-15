@@ -1,0 +1,106 @@
+{\rtf1\ansi\ansicpg936\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl250\slmult1\pardirnatural\partightenfactor0
+
+\f0\b\fs30\fsmilli15400 \cf2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<title>\uc0\u33521 \u35821 \u39640 \u39057 \u35789 \u23398 \u20064 </title>\
+<style>\
+    body \{\
+        font-family: Arial, sans-serif;\
+        background: #f5f5f5;\
+        display: flex;\
+        flex-direction: column;\
+        align-items: center;\
+        padding: 20px;\
+    \}\
+    .card \{\
+        background: white;\
+        padding: 20px;\
+        border-radius: 10px;\
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);\
+        max-width: 400px;\
+        text-align: center;\
+    \}\
+    button \{\
+        margin: 5px;\
+        padding: 10px 15px;\
+        font-size: 16px;\
+        border: none;\
+        border-radius: 5px;\
+        cursor: pointer;\
+    \}\
+    .speak \{\
+        background: #4CAF50;\
+        color: white;\
+    \}\
+    .next \{\
+        background: #2196F3;\
+        color: white;\
+    \}\
+</style>\
+</head>\
+<body>\
+\
+<h1>\uc0\u33521 \u35821 \u39640 \u39057 \u35789 \u23398 \u20064 </h1>\
+<div class="card">\
+    <h2 id="word">Loading...</h2>\
+    <p id="meaning"></p>\
+    <p id="sentence"></p>\
+    <button class="speak" onclick="speakWord()">\uc0\u55357 \u56586  \u21457 \u38899 </button>\
+    <button class="next" onclick="nextWord()">\uc0\u10145  \u19979 \u19968 \u20010 </button>\
+</div>\
+\
+<script>\
+const words = [\
+    \{word: "be", meaning: "\uc0\u26159 ", sentence: "I want to be a doctor."\},\
+    \{word: "have", meaning: "\uc0\u26377 ", sentence: "I have a book."\},\
+    \{word: "do", meaning: "\uc0\u20570 ", sentence: "I do my homework every day."\},\
+    \{word: "say", meaning: "\uc0\u35828 ", sentence: "Can you say it again?"\},\
+    \{word: "go", meaning: "\uc0\u21435 ", sentence: "I go to school by bus."\},\
+    \{word: "get", meaning: "\uc0\u24471 \u21040 ", sentence: "I get up at 7 a.m."\},\
+    \{word: "make", meaning: "\uc0\u21046 \u20316 ", sentence: "I make breakfast every morning."\},\
+    \{word: "know", meaning: "\uc0\u30693 \u36947 ", sentence: "I know the answer."\},\
+    \{word: "think", meaning: "\uc0\u24819 ", sentence: "I think it is a good idea."\},\
+    \{word: "take", meaning: "\uc0\u25343 ", sentence: "Take your umbrella with you."\},\
+    \{word: "see", meaning: "\uc0\u30475 \u35265 ", sentence: "I see the stars at night."\},\
+    \{word: "come", meaning: "\uc0\u26469 ", sentence: "Please come to my party."\},\
+    \{word: "want", meaning: "\uc0\u24819 \u35201 ", sentence: "I want some water."\},\
+    \{word: "use", meaning: "\uc0\u20351 \u29992 ", sentence: "I use my phone to take pictures."\},\
+    \{word: "find", meaning: "\uc0\u25214 \u21040 ", sentence: "Can you find my keys?"\},\
+    \{word: "give", meaning: "\uc0\u32473 ", sentence: "Give me the book, please."\},\
+    \{word: "tell", meaning: "\uc0\u21578 \u35785 ", sentence: "Tell me your name."\},\
+    \{word: "work", meaning: "\uc0\u24037 \u20316 ", sentence: "I work in a hospital."\},\
+    \{word: "call", meaning: "\uc0\u25171 \u30005 \u35805 ", sentence: "I call my friend every weekend."\},\
+    \{word: "try", meaning: "\uc0\u23581 \u35797 ", sentence: "Try again, you can do it."\}\
+];\
+\
+let currentIndex = 0;\
+\
+function showWord(index) \{\
+    document.getElementById("word").innerText = words[index].word;\
+    document.getElementById("meaning").innerText = "\uc0\u20013 \u25991 \u37322 \u20041 : " + words[index].meaning;\
+    document.getElementById("sentence").innerText = "\uc0\u20363 \u21477 : " + words[index].sentence;\
+\}\
+\
+function speakWord() \{\
+    let utterance = new SpeechSynthesisUtterance(words[currentIndex].word);\
+    utterance.lang = "en-US";\
+    speechSynthesis.speak(utterance);\
+\}\
+\
+function nextWord() \{\
+    currentIndex = Math.floor(Math.random() * words.length);\
+    showWord(currentIndex);\
+\}\
+\
+showWord(currentIndex);\
+</script>\
+\
+</body>\
+</html>}

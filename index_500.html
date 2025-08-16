@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>500个高频英语单词学习</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: inline-block; min-width: 400px; position: relative; }
+        .word { font-size: 28px; font-weight: bold; }
+        .number { position: absolute; right: 20px; top: 10px; color: gray; }
+        button { margin: 5px; padding: 8px 16px; }
+        input { padding: 6px; }
+    </style>
+</head>
+<body>
+    <h1>500个高频英语单词学习</h1>
+    <div>
+        跳转到单词编号： <input type="number" id="jumpInput" min="1" max="500">
+        <button onclick="jumpTo()">跳转</button>
+    </div>
+    <br>
+    <div class="card">
+        <div class="number" id="number">1</div>
+        <div class="word" id="word"></div>
+        <p id="meaning"></p>
+        <p><b>例句:</b> <span id="example"></span> <button onclick="speak('example')">🔊</button></p>
+        <p id="example_cn"></p>
+        <input type="text" id="spellInput" placeholder="输入拼写检查">
+        <button onclick="checkSpelling()">检查拼写</button>
+    </div>
+    <br>
+    <button onclick="prevWord()">上一个</button>
+    <button onclick="nextWord()">下一个</button>
+
+<script>
+    const words = [{"word": "the", "meaning": "这/那（冠词）", "example": "The book is on the table.", "example_cn": "这本书在桌子上。"}, {"word": "be", "meaning": "是", "example": "I want to be a teacher.", "example_cn": "我想成为一名老师。"}, {"word": "to", "meaning": "到，向", "example": "I am going to school.", "example_cn": "我正在去学校。"}, {"word": "of", "meaning": "…的", "example": "A cup of tea.", "example_cn": "一杯茶。"}, {"word": "and", "meaning": "和", "example": "I like apples and oranges.", "example_cn": "我喜欢苹果和橙子。"}, {"word": "a", "meaning": "一个", "example": "She has a car.", "example_cn": "她有一辆车。"}, {"word": "in", "meaning": "在…里面", "example": "He is in the room.", "example_cn": "他在房间里。"}, {"word": "that", "meaning": "那", "example": "That is my friend.", "example_cn": "那是我的朋友。"}, {"word": "have", "meaning": "有", "example": "I have two brothers.", "example_cn": "我有两个兄弟。"}, {"word": "I", "meaning": "我", "example": "I am happy.", "example_cn": "我很开心。"}, {"word": "it", "meaning": "它", "example": "It is raining.", "example_cn": "正在下雨。"}, {"word": "for", "meaning": "为了", "example": "This gift is for you.", "example_cn": "这个礼物是给你的。"}, {"word": "not", "meaning": "不", "example": "I do not like coffee.", "example_cn": "我不喜欢咖啡。"}, {"word": "on", "meaning": "在…上", "example": "The phone is on the desk.", "example_cn": "手机在桌子上。"}, {"word": "with", "meaning": "和…一起", "example": "I live with my parents.", "example_cn": "我和父母住在一起。"}, {"word": "he", "meaning": "他", "example": "He is my brother.", "example_cn": "他是我的兄弟。"}, {"word": "as", "meaning": "像…一样", "example": "She is as tall as her sister.", "example_cn": "她和她姐姐一样高。"}, {"word": "you", "meaning": "你/你们", "example": "You are welcome.", "example_cn": "不客气。"}, {"word": "do", "meaning": "做", "example": "I do my homework every day.", "example_cn": "我每天做作业。"}, {"word": "at", "meaning": "在", "example": "He is at the station.", "example_cn": "他在车站。"}];
+    let current = 0;
+
+    function renderWord() {
+        document.getElementById("number").innerText = current + 1;
+        document.getElementById("word").innerText = words[current].word;
+        document.getElementById("meaning").innerText = "中文释义: " + words[current].meaning;
+        document.getElementById("example").innerText = words[current].example;
+        document.getElementById("example_cn").innerText = words[current].example_cn;
+    }
+
+    function prevWord() {
+        if (current > 0) current--;
+        renderWord();
+    }
+
+    function nextWord() {
+        if (current < words.length - 1) current++;
+        renderWord();
+    }
+
+    function jumpTo() {
+        let num = document.getElementById("jumpInput").value;
+        if (num >= 1 && num <= words.length) {
+            current = num - 1;
+            renderWord();
+        } else {
+            alert("请输入 1 到 " + words.length + " 之间的数字");
+        }
+    }
+
+    function speak(type) {
+        let text = (type === "example") ? words[current].example : words[current].word;
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "en-US";
+        speechSynthesis.speak(utterance);
+    }
+
+    function checkSpelling() {
+        let input = document.getElementById("spellInput").value.trim().toLowerCase();
+        if (input === words[current].word.toLowerCase()) {
+            alert("✅ 拼写正确！");
+        } else {
+            alert("❌ 拼写错误，再试一次！");
+        }
+    }
+
+    renderWord();
+</script>
+</body>
+</html>

@@ -83,7 +83,7 @@
 <body>
     <h1>Daily English Vocabulary (1000 Words)</h1>
     <p>Click the number to jump. Practice with spell check!</p>
-    <p>Current Date and Time: <span id="date-time">11:07 PM PDT, Friday, August 15, 2025</span></p>
+    <p>Current Date and Time: <span id="date-time">11:14 PM PDT, Friday, August 15, 2025</span></p>
 
     <div id="vocabulary-list">
         <!-- Word Entry 1 -->
@@ -229,50 +229,4 @@
     <script>
         // 跳转功能
         function jumpToWord(number) {
-            document.getElementById(`word-${number}`).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // 发音功能
-        function playAudio(word, example) {
-            const wordAudio = document.getElementById(word);
-            wordAudio.play();
-            if (example) {
-                setTimeout(() => document.getElementById(example).play(), 1000); // 延时1秒播放例句
-            }
-        }
-
-        // 拼写检查功能
-        function checkSpelling() {
-            const input = document.getElementById('spell-input').value.toLowerCase().trim();
-            const words = [
-                "hello", "goodbye", "thank", "please", "yes", "no", "friend", "family", "time", "day"
-                // 扩展到1000个单词
-            ];
-            const result = document.getElementById('result');
-            if (words.includes(input)) {
-                result.textContent = "拼写正确！";
-                result.className = "correct";
-            } else {
-                result.textContent = "拼写错误或单词不在列表中！";
-                result.className = "incorrect";
-            }
-        }
-
-        // 更新日期时间
-        function updateDateTime() {
-            document.getElementById('date-time').textContent = new Date().toLocaleString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: true,
-                timeZone: 'America/Los_Angeles',
-                weekday: 'long',
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric'
-            }) + " PDT";
-        }
-        updateDateTime();
-        setInterval(updateDateTime, 60000); // 每分钟更新一次
-    </script>
-</body>
-</html>
+            document.getElementById(`word-${number}`).scrollIntoView({ behavior: '

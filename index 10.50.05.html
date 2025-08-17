@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语高频词学习</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            font-size: 1.5em;
+        }
+        .word {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .meaning {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .sentence {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .speak-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .next-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        .check-btn {
+            background-color: #ff9800;
+            color: white;
+        }
+        input {
+            font-size: 1.2em;
+            padding: 8px;
+            margin-top: 15px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>英语高频词学习</h1>
+
+<div class="card">
+    <div class="word" id="word"></div>
+    <div class="meaning" id="meaning"></div>
+    <div class="sentence" id="sentence"></div>
+    <div class="sentence" id="sentenceCN"></div>
+
+    <input type="text" id="spellInput" placeholder="请输入单词拼写">
+    <button class="check-btn" onclick="checkSpelling()">检查拼写</button>
+    <div class="result" id="result"></div>
+
+    <div class="buttons">
+        <button class="speak-btn" onclick="speakWord()">单词发音</button>
+        <button class="speak-btn" onclick="speakSentence()">例句发音</button>
+        <button class="next-btn" onclick="nextWord()">下一个</button>
+    </div>
+</div>
+
+<script>
+    const words = [
+        {word: "be", meaning: "是", sentence: "I want to be a doctor.", sentenceCN: "我想成为一名医生"},
+        {word: "have", meaning: "有", sentence: "I have a car.", sentenceCN: "我有一辆车"},
+        {word: "go", meaning: "去", sentence: "I go to school every day.", sentenceCN: "我每天去上学"},
+        {word: "like", meaning: "喜欢", sentence: "I like ice cream.", sentenceCN: "我喜欢冰淇淋"}
+    ];
+
+    let currentIndex = 0;
+
+    function loadWord() {
+        const w = words[currentIndex];
+        document.getElementById("word").textContent = w.word;
+        document.getElementById("meaning").textContent = "中文释义: " + w.meaning;
+        document.getElementById("sentence").textContent = "例句: " + w.sentence;
+        document.getElementById("sentenceCN").textContent = "释义: " + w.sentenceCN;
+        document.getElementById("spellInput").value = "";
+        document.getElementById("result").textContent = "";
+    }
+
+    function nextWord() {
+        currentIndex = (currentIndex + 1) % words.length;
+        loadWord();
+    }
+
+    function speakWord() {
+        const word = words[currentIndex].word;
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = "en-US";
+        speechSynthesis.speak(utterance);
+    }
+
+    function speakSentence() {
+        const sentence = words[currentIndex].sentence;
+        const utterance = new SpeechSynthesisUtterance(sentence);
+        utterance.lang = "en-US";
+        speechSynthesis.speak(utterance);
+    }
+
+    function checkSpelling() {
+        const input = document.getElementById("spellInput").value.trim();
+        const correct = words[currentIndex].word;
+        if (input.toLowerCase() === correct.toLowerCase()) {
+            document.getElementById("result").textContent = "✅ 拼写正确！";
+            document.getElementById("result").style.color = "green";
+        } else {
+            document.getElementById("result").textContent = "❌ 拼写错误，正确是: " + correct;
+            document.getElementById("result").style.color = "red";
+        }
+    }
+
+    loadWord();
+</script>
+
+</body>
+</html>

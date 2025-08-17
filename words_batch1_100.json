@@ -1,0 +1,596 @@
+[
+  {
+    "word": "the",
+    "meaning": "这; 那(定冠词)",
+    "example": "The book is on the table.",
+    "example_cn": "书在桌子上。"
+  },
+  {
+    "word": "be",
+    "meaning": "是; 存在",
+    "example": "She wants to be a doctor.",
+    "example_cn": "她想成为一名医生。"
+  },
+  {
+    "word": "to",
+    "meaning": "到; 向; 去",
+    "example": "I am going to school.",
+    "example_cn": "我正在去学校。"
+  },
+  {
+    "word": "of",
+    "meaning": "…的",
+    "example": "A cup of tea.",
+    "example_cn": "一杯茶。"
+  },
+  {
+    "word": "and",
+    "meaning": "和; 与",
+    "example": "Tom and Mary are friends.",
+    "example_cn": "汤姆和玛丽是朋友。"
+  },
+  {
+    "word": "a",
+    "meaning": "一; 一个(不定冠词)",
+    "example": "I saw a cat in the garden.",
+    "example_cn": "我在花园里看到一只猫。"
+  },
+  {
+    "word": "in",
+    "meaning": "在…里面",
+    "example": "The keys are in the bag.",
+    "example_cn": "钥匙在包里。"
+  },
+  {
+    "word": "that",
+    "meaning": "那; 那个",
+    "example": "I know that man.",
+    "example_cn": "我认识那个人。"
+  },
+  {
+    "word": "have",
+    "meaning": "有; 拥有",
+    "example": "I have two brothers.",
+    "example_cn": "我有两个兄弟。"
+  },
+  {
+    "word": "I",
+    "meaning": "我",
+    "example": "I am learning English.",
+    "example_cn": "我正在学英语。"
+  },
+  {
+    "word": "it",
+    "meaning": "它",
+    "example": "It is raining.",
+    "example_cn": "正在下雨。"
+  },
+  {
+    "word": "for",
+    "meaning": "为了; 给",
+    "example": "This gift is for you.",
+    "example_cn": "这个礼物是给你的。"
+  },
+  {
+    "word": "not",
+    "meaning": "不; 没有",
+    "example": "I do not like coffee.",
+    "example_cn": "我不喜欢咖啡。"
+  },
+  {
+    "word": "on",
+    "meaning": "在…上面",
+    "example": "The pen is on the desk.",
+    "example_cn": "笔在桌子上。"
+  },
+  {
+    "word": "with",
+    "meaning": "和; 与…一起",
+    "example": "I go to school with my friend.",
+    "example_cn": "我和朋友一起去上学。"
+  },
+  {
+    "word": "he",
+    "meaning": "他",
+    "example": "He is my brother.",
+    "example_cn": "他是我哥哥。"
+  },
+  {
+    "word": "as",
+    "meaning": "如同; 当作",
+    "example": "She works as a teacher.",
+    "example_cn": "她是一名老师。"
+  },
+  {
+    "word": "you",
+    "meaning": "你; 你们",
+    "example": "You are very kind.",
+    "example_cn": "你很善良。"
+  },
+  {
+    "word": "do",
+    "meaning": "做; 干",
+    "example": "I will do my homework.",
+    "example_cn": "我要做作业。"
+  },
+  {
+    "word": "at",
+    "meaning": "在; 于",
+    "example": "He is at home.",
+    "example_cn": "他在家。"
+  },
+  {
+    "word": "this",
+    "meaning": "这; 这个",
+    "example": "This is my bag.",
+    "example_cn": "这是我的包。"
+  },
+  {
+    "word": "but",
+    "meaning": "但是",
+    "example": "I like tea, but not coffee.",
+    "example_cn": "我喜欢茶，但不喜欢咖啡。"
+  },
+  {
+    "word": "his",
+    "meaning": "他的",
+    "example": "This is his car.",
+    "example_cn": "这是他的车。"
+  },
+  {
+    "word": "by",
+    "meaning": "在…旁边; 被",
+    "example": "The book was written by her.",
+    "example_cn": "这本书是她写的。"
+  },
+  {
+    "word": "from",
+    "meaning": "从; 来自",
+    "example": "She is from China.",
+    "example_cn": "她来自中国。"
+  },
+  {
+    "word": "they",
+    "meaning": "他们",
+    "example": "They are playing football.",
+    "example_cn": "他们正在踢足球。"
+  },
+  {
+    "word": "we",
+    "meaning": "我们",
+    "example": "We are family.",
+    "example_cn": "我们是一家人。"
+  },
+  {
+    "word": "say",
+    "meaning": "说",
+    "example": "What did you say?",
+    "example_cn": "你说了什么？"
+  },
+  {
+    "word": "her",
+    "meaning": "她的",
+    "example": "I like her dress.",
+    "example_cn": "我喜欢她的裙子。"
+  },
+  {
+    "word": "she",
+    "meaning": "她",
+    "example": "She is a doctor.",
+    "example_cn": "她是一名医生。"
+  },
+  {
+    "word": "or",
+    "meaning": "或者; 还是",
+    "example": "Do you want tea or coffee?",
+    "example_cn": "你要茶还是咖啡？"
+  },
+  {
+    "word": "an",
+    "meaning": "一(个)",
+    "example": "I saw an apple on the table.",
+    "example_cn": "我在桌子上看到一个苹果。"
+  },
+  {
+    "word": "will",
+    "meaning": "将要",
+    "example": "I will call you tomorrow.",
+    "example_cn": "我明天会打电话给你。"
+  },
+  {
+    "word": "my",
+    "meaning": "我的",
+    "example": "This is my phone.",
+    "example_cn": "这是我的手机。"
+  },
+  {
+    "word": "one",
+    "meaning": "一; 一个",
+    "example": "I have one sister.",
+    "example_cn": "我有一个妹妹。"
+  },
+  {
+    "word": "all",
+    "meaning": "所有的; 全部",
+    "example": "All students must study.",
+    "example_cn": "所有学生都必须学习。"
+  },
+  {
+    "word": "would",
+    "meaning": "将; 会",
+    "example": "I would like some water.",
+    "example_cn": "我想要点水。"
+  },
+  {
+    "word": "there",
+    "meaning": "那里; 那儿",
+    "example": "There is a park near my house.",
+    "example_cn": "我家附近有一个公园。"
+  },
+  {
+    "word": "their",
+    "meaning": "他们的",
+    "example": "This is their home.",
+    "example_cn": "这是他们的家。"
+  },
+  {
+    "word": "what",
+    "meaning": "什么",
+    "example": "What is your name?",
+    "example_cn": "你叫什么名字？"
+  },
+  {
+    "word": "so",
+    "meaning": "所以; 如此",
+    "example": "I was tired, so I went to bed early.",
+    "example_cn": "我很累，所以早早睡觉了。"
+  },
+  {
+    "word": "up",
+    "meaning": "向上; 在上面",
+    "example": "Look up at the sky.",
+    "example_cn": "抬头看天空。"
+  },
+  {
+    "word": "out",
+    "meaning": "外出; 出去",
+    "example": "She went out of the room.",
+    "example_cn": "她走出了房间。"
+  },
+  {
+    "word": "if",
+    "meaning": "如果",
+    "example": "If it rains, we will stay at home.",
+    "example_cn": "如果下雨，我们就待在家里。"
+  },
+  {
+    "word": "about",
+    "meaning": "关于; 大约",
+    "example": "This book is about history.",
+    "example_cn": "这本书是关于历史的。"
+  },
+  {
+    "word": "who",
+    "meaning": "谁",
+    "example": "Who is your teacher?",
+    "example_cn": "谁是你的老师？"
+  },
+  {
+    "word": "get",
+    "meaning": "得到; 获得",
+    "example": "I need to get some water.",
+    "example_cn": "我需要去拿点水。"
+  },
+  {
+    "word": "which",
+    "meaning": "哪一个",
+    "example": "Which color do you like?",
+    "example_cn": "你喜欢哪种颜色？"
+  },
+  {
+    "word": "go",
+    "meaning": "去",
+    "example": "I go to work every day.",
+    "example_cn": "我每天去上班。"
+  },
+  {
+    "word": "me",
+    "meaning": "我(宾格)",
+    "example": "Please give me the book.",
+    "example_cn": "请把书给我。"
+  },
+  {
+    "word": "when",
+    "meaning": "什么时候",
+    "example": "When is your birthday?",
+    "example_cn": "你的生日是什么时候？"
+  },
+  {
+    "word": "make",
+    "meaning": "做; 制造",
+    "example": "She can make a cake.",
+    "example_cn": "她会做蛋糕。"
+  },
+  {
+    "word": "can",
+    "meaning": "能; 可以",
+    "example": "I can swim.",
+    "example_cn": "我会游泳。"
+  },
+  {
+    "word": "like",
+    "meaning": "喜欢",
+    "example": "I like music.",
+    "example_cn": "我喜欢音乐。"
+  },
+  {
+    "word": "time",
+    "meaning": "时间",
+    "example": "Time is precious.",
+    "example_cn": "时间很宝贵。"
+  },
+  {
+    "word": "no",
+    "meaning": "不; 没有",
+    "example": "No, I don’t want it.",
+    "example_cn": "不，我不要。"
+  },
+  {
+    "word": "just",
+    "meaning": "刚刚; 只是",
+    "example": "I just arrived home.",
+    "example_cn": "我刚到家。"
+  },
+  {
+    "word": "him",
+    "meaning": "他(宾格)",
+    "example": "I know him very well.",
+    "example_cn": "我很了解他。"
+  },
+  {
+    "word": "know",
+    "meaning": "知道; 认识",
+    "example": "Do you know her?",
+    "example_cn": "你认识她吗？"
+  },
+  {
+    "word": "take",
+    "meaning": "拿; 带走",
+    "example": "Please take this pen.",
+    "example_cn": "请拿走这支笔。"
+  },
+  {
+    "word": "people",
+    "meaning": "人们",
+    "example": "Many people like football.",
+    "example_cn": "许多人喜欢足球。"
+  },
+  {
+    "word": "into",
+    "meaning": "进入",
+    "example": "She went into the room.",
+    "example_cn": "她走进房间。"
+  },
+  {
+    "word": "year",
+    "meaning": "年",
+    "example": "This year is 2025.",
+    "example_cn": "今年是2025年。"
+  },
+  {
+    "word": "your",
+    "meaning": "你的",
+    "example": "This is your book.",
+    "example_cn": "这是你的书。"
+  },
+  {
+    "word": "good",
+    "meaning": "好的",
+    "example": "This is a good idea.",
+    "example_cn": "这是个好主意。"
+  },
+  {
+    "word": "some",
+    "meaning": "一些",
+    "example": "I have some apples.",
+    "example_cn": "我有一些苹果。"
+  },
+  {
+    "word": "could",
+    "meaning": "可以; 能够",
+    "example": "I could help you.",
+    "example_cn": "我可以帮助你。"
+  },
+  {
+    "word": "them",
+    "meaning": "他们(宾格)",
+    "example": "I saw them yesterday.",
+    "example_cn": "我昨天见过他们。"
+  },
+  {
+    "word": "see",
+    "meaning": "看见",
+    "example": "I can see the mountains.",
+    "example_cn": "我能看见山。"
+  },
+  {
+    "word": "other",
+    "meaning": "其他的",
+    "example": "I have other things to do.",
+    "example_cn": "我还有别的事要做。"
+  },
+  {
+    "word": "than",
+    "meaning": "比",
+    "example": "He is taller than me.",
+    "example_cn": "他比我高。"
+  },
+  {
+    "word": "then",
+    "meaning": "然后; 那时",
+    "example": "I went home, then I slept.",
+    "example_cn": "我回家了，然后睡觉。"
+  },
+  {
+    "word": "now",
+    "meaning": "现在",
+    "example": "I am busy now.",
+    "example_cn": "我现在很忙。"
+  },
+  {
+    "word": "look",
+    "meaning": "看",
+    "example": "Look at the picture.",
+    "example_cn": "看这幅画。"
+  },
+  {
+    "word": "only",
+    "meaning": "只有; 仅仅",
+    "example": "I only have one pen.",
+    "example_cn": "我只有一支笔。"
+  },
+  {
+    "word": "come",
+    "meaning": "来",
+    "example": "Please come here.",
+    "example_cn": "请到这边来。"
+  },
+  {
+    "word": "its",
+    "meaning": "它的",
+    "example": "The dog wagged its tail.",
+    "example_cn": "那只狗摇了摇尾巴。"
+  },
+  {
+    "word": "over",
+    "meaning": "在…之上; 超过",
+    "example": "The plane flew over the city.",
+    "example_cn": "飞机飞过了城市上空。"
+  },
+  {
+    "word": "think",
+    "meaning": "想; 认为",
+    "example": "I think it’s a good idea.",
+    "example_cn": "我认为这是个好主意。"
+  },
+  {
+    "word": "also",
+    "meaning": "也; 同样",
+    "example": "I like apples and also bananas.",
+    "example_cn": "我喜欢苹果，也喜欢香蕉。"
+  },
+  {
+    "word": "back",
+    "meaning": "后面; 返回",
+    "example": "He came back late.",
+    "example_cn": "他回来得很晚。"
+  },
+  {
+    "word": "after",
+    "meaning": "在…之后",
+    "example": "I will call you after dinner.",
+    "example_cn": "晚饭后我会给你打电话。"
+  },
+  {
+    "word": "use",
+    "meaning": "使用",
+    "example": "How do you use this machine?",
+    "example_cn": "你怎么使用这台机器？"
+  },
+  {
+    "word": "two",
+    "meaning": "二; 两个",
+    "example": "I have two pens.",
+    "example_cn": "我有两支笔。"
+  },
+  {
+    "word": "how",
+    "meaning": "怎样; 如何",
+    "example": "How are you?",
+    "example_cn": "你好吗？"
+  },
+  {
+    "word": "our",
+    "meaning": "我们的",
+    "example": "This is our home.",
+    "example_cn": "这是我们的家。"
+  },
+  {
+    "word": "work",
+    "meaning": "工作; 劳动",
+    "example": "She goes to work every day.",
+    "example_cn": "她每天去上班。"
+  },
+  {
+    "word": "first",
+    "meaning": "第一",
+    "example": "This is my first time here.",
+    "example_cn": "这是我第一次来这里。"
+  },
+  {
+    "word": "well",
+    "meaning": "好; 健康",
+    "example": "She sings very well.",
+    "example_cn": "她唱得很好。"
+  },
+  {
+    "word": "way",
+    "meaning": "方式; 道路",
+    "example": "This is the best way to learn.",
+    "example_cn": "这是最好的学习方法。"
+  },
+  {
+    "word": "even",
+    "meaning": "甚至; 平坦的",
+    "example": "He didn’t even say goodbye.",
+    "example_cn": "他甚至没说再见。"
+  },
+  {
+    "word": "new",
+    "meaning": "新的",
+    "example": "I bought a new phone.",
+    "example_cn": "我买了一部新手机。"
+  },
+  {
+    "word": "want",
+    "meaning": "想要",
+    "example": "I want some water.",
+    "example_cn": "我想要点水。"
+  },
+  {
+    "word": "because",
+    "meaning": "因为",
+    "example": "I stayed home because it rained.",
+    "example_cn": "因为下雨我待在家。"
+  },
+  {
+    "word": "any",
+    "meaning": "任何; 一些",
+    "example": "Do you have any questions?",
+    "example_cn": "你有任何问题吗？"
+  },
+  {
+    "word": "these",
+    "meaning": "这些",
+    "example": "These are my friends.",
+    "example_cn": "这些是我的朋友。"
+  },
+  {
+    "word": "give",
+    "meaning": "给",
+    "example": "Please give me some advice.",
+    "example_cn": "请给我一些建议。"
+  },
+  {
+    "word": "day",
+    "meaning": "日; 白天",
+    "example": "Today is a sunny day.",
+    "example_cn": "今天是个晴天。"
+  },
+  {
+    "word": "most",
+    "meaning": "最; 大多数",
+    "example": "Most people like music.",
+    "example_cn": "大多数人喜欢音乐。"
+  }
+]
